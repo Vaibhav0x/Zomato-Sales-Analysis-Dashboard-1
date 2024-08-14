@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    position: sticky;
+    margin-top:none;
+    top:0;
+    background-color: #f1f1f1;
+    padding: 8px;
+    z-index: 1000; 
+}
+h1 {
+    text-align: center;
+    color: #0066cc;
+}
+
+.task-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.task-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.task-details {
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.about-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+a:hover{
+    color:blue;
+}
+.about{
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.name:hover{
+    color:orange
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    iframe {
+        height: 500px;
+    }
+    .task-container {
+        padding: 15px;
+    }
+}
+@media (max-width: 992px) {
+    iframe {
+        height: 450px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    iframe {
+        height: 400px;
+    }
+    .task-container {
+        padding: 10px;
+    }
+    .task-title {
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 576px) {
+    iframe {
+        height: 350px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .task-title {
+        font-size: 1em;
+    }
+    .task-details {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 400px) {
+    iframe {
+        height: 300px;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    .task-title {
+        font-size: 0.9em;
+    }
+    .task-details {
+        font-size: 0.8em;
+    }
+}
